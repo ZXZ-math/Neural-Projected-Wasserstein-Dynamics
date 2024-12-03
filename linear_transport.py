@@ -6,8 +6,7 @@ import warnings
 warnings.filterwarnings("ignore")
 from OU_process import OU_process, OU_parameters
 from two_layer import two_layer
-from SDE_sampler import sde_sampler
-from compute_G import G_matrix,G_matrix_b,G_matrix_w
+from compute_G import G_matrix,G_matrix_w
 
 # set seed 
 seed_num = 1099

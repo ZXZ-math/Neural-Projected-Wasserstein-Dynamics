@@ -5,15 +5,13 @@ from losses import Interaction_loss
 import warnings
 warnings.filterwarnings("ignore")
 from two_layer import two_layer
-from densities import Porous_medium
 from compute_G import G_matrix,G_matrix_w
-from FPE import transport_map
 from tqdm import tqdm 
 
 
 # set seed 
-seed_num = 154
-torch.manual_seed(seed_num) #154 #1099
+seed_num = 42
+torch.manual_seed(seed_num) 
 np.random.seed(0)
 
 
@@ -30,7 +28,7 @@ dimension = 1
 ############################################################
 # Interaction potential
 ############################################################
-chi = .5 # 0.5 or 1.5 
+chi = 1.5 # 0.5 or 1.5 
 def W(x):
     return torch.log(torch.abs(x))*2*chi
 

@@ -37,7 +37,7 @@ D = sigma_ou**2/2
 # choice of potential
 ############################################################
 # 1: quadratic. 2: sixth order polynomial. 3: quartic 
-choice = 1
+choice = 2
 def V(x,dimension = dimension):
     if choice == 1:
         # quadratic，this is also an OU process 
@@ -204,7 +204,7 @@ for index,m in enumerate(m_list):
 ############################################################
 # plot density evolution 
 ############################################################
-
+print('plotting...')
 T = lr*(Max_Iter-1)
 num_plots = 6
 t = np.linspace(0,T,num_plots)

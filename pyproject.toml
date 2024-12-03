@@ -2,7 +2,7 @@
 name = "npwd"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Xinzhe Zuo <zxz@math.ucla.edu>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
@@ -11,6 +11,8 @@ matplotlib = "^3.9.3"
 jupyter = "^1.1.1"
 notebook = "^7.2.2"
 torch = "^2.5.1"
+scipy = "^1.14.1"
+tqdm = "^4.67.1"
 
 
 [build-system]
