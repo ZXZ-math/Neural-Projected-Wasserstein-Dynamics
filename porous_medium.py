@@ -13,7 +13,7 @@ from tqdm import tqdm
 
 # set seed 
 seed_num = 1099
-torch.manual_seed(seed_num) #154 #1099
+torch.manual_seed(seed_num) 
 np.random.seed(0)
 
 
